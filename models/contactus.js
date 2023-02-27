@@ -1,0 +1,19 @@
+const mongoose = require('mongoose');
+// autoIncrement = require('mongoose-auto-increment');
+
+const { Schema } = mongoose;
+
+const contactusSchema = new Schema({
+    ss:{ type: String, default: null },
+    lastName:{ type: String, default: null },
+    phoneNumber:{ type: String, default: null },
+    email:{ type: String, default: null },
+    msg:{ type: String, default: null },
+    isDeleted: { type: Boolean, default: false },
+}, {
+    timestamps: true,
+});
+
+contactusSchema.set('toObject');
+contactusSchema.set('toJSON');
+module.exports = mongoose.model('contactus', contactusSchema);
