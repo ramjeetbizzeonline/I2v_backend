@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const products = new Schema({
-    uploadBannerImage: [{ type: String, default: null }],
+    uploadBannerImage: { type: String, default: null },
     category: { type: String, default: null },
     name: { type: String, default: null },
     slug:{ type: String, default: null },
