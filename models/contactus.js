@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const contactusSchema = new Schema({
-    ss:{ type: String, default: null },
+    firstName:{ type: String, default: null },
     lastName:{ type: String, default: null },
     phoneNumber:{ type: String, default: null },
     email:{ type: String, default: null },

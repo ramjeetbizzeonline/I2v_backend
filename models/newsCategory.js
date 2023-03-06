@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-
-const blogCategorySchema = new Schema({
+const newsCategorySchema = new Schema({
     name: { type: String, default: null },
     description: { type: String, default: null },
     isDeleted: { type: Boolean, default: false }
@@ -10,6 +9,6 @@ const blogCategorySchema = new Schema({
     timestamps: true,
 });
 
-blogCategorySchema.set('toObject');
-blogCategorySchema.set('toJSON');
-module.exports = mongoose.model('blogcategory', blogCategorySchema);
+newsCategorySchema.set('toObject');
+newsCategorySchema.set('toJSON');
+module.exports = mongoose.model('newscategory', newsCategorySchema);
