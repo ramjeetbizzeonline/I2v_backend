@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-// autoIncrement = require('mongoose-auto-increment');
-
 const { Schema } = mongoose;
 
 const contactusSchema = new Schema({
