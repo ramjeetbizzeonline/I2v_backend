@@ -4,6 +4,7 @@ const blogDataRoots = require('./blogData');
 const contactusRoots = require('./contactus');
 const partnerRoots = require('./partner');
 const adminRoots = require('./admin');
+const careerRoots = require('./career');
 const router = express.Router();
 
 
@@ -12,5 +13,5 @@ router.use('/blogData', blogDataRoots);
 router.use('/contactus', contactusRoots);
 router.use('/partner', partnerRoots);
 router.use('/admin', adminRoots);
-
+router.use('/career',careerRoots);
 module.exports = router;
